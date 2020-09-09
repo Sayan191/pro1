@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Barriecito' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'>	
+    <link href='https://fonts.googleapis.com/css?family=Alatsi' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    .form{
+        background-color: #333;
+        height: 500px;
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        color: #ffffff;
+    }
+    .form-control{
+        width: 400px;
+        height: 40px;
+    }
+</style>
+<body>
+    <div class="form">
+        <form>
+            <div class="form-group">
+              <label>Name</label>
+              <input type="text" name="Name" class="form-control"  placeholder="Name" required>
+              
+            </div>
+            <div class="form-group">
+              <label>Tag Name</label>
+              <input type="text" name="Tag" class="form-control"  placeholder="Tag" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <div class="row" style="display: none;">
+        <div class="container" style="text-align:center;">
+            <div class="card">
+                <h2 style="font-family:Alatsi;">Its Me</h2>
+                
+                <div class="contain">
+                    <h2 style="font-family:Alata;">{{ name }}</h2>
+                    <p class="title" style="font-size:35px;font-family:Alata;">{{ tag }}</p>
+                    <p style="font-size:20px;font-family:Alatsi;">Aśāṇśōl̥ Ēṇgīṇēēr̥īṇg Cōl̥l̥ēgē</p>  
+                    <p><ion-icon size="large" name="logo-facebook"></ion-icon> <ion-icon size="large" name="logo-linkedin"></ion-icon> <ion-icon size="large" name="logo-github"></ion-icon></p>                     
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>    
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+</body>
+</html>
